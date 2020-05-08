@@ -12,10 +12,10 @@ class ProductManagerSmartphoneTest {
     ProductRepository repository = new ProductRepository();
     ProductManager manager = new ProductManager(repository);
     private Smartphone firstPhone = new Smartphone(1,"Galaxy",1000, "Samsung");
-    private Smartphone secondPhone = new Smartphone(1,"iPhone11",1000, "Apple");
-    private Smartphone thirdPhone = new Smartphone(1,"RedmiNote",1000, "Xiaomi");
-    private Smartphone fourthPhone = new Smartphone(1,"iPhoneX",1000, "Apple");
-    private Smartphone fifthPhone = new Smartphone(1,"GalaxyNote",1000, "Samsung");
+    private Smartphone secondPhone = new Smartphone(2,"iPhone11",1000, "Apple");
+    private Smartphone thirdPhone = new Smartphone(3,"RedmiNote",1000, "Xiaomi");
+    private Smartphone fourthPhone = new Smartphone(4,"iPhoneX",1000, "Apple");
+    private Smartphone fifthPhone = new Smartphone(5,"GalaxyNote",1000, "Samsung");
 
     @BeforeEach
     public void prepareManager(){
