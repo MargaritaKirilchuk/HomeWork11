@@ -8,22 +8,22 @@ class ProductBookTest {
     Book book = new Book(1,"Война и Мир",1000, "Л.Н.Толстой");
 
     @Test
-    void shouldMatchesByName () {
+    void shouldMatchesByName() {
         assertTrue (book.matches("Война и мир"));
     }
 
     @Test
-    void shouldMatchesByAuthor () {
+    void shouldMatchesByAuthor() {
         assertTrue(book.matches("Л.Н.Толстой"));
     }
 
     @Test
-    void shouldMatchesWrongName () {
+    void shouldMatchesWrongName() {
         assertFalse(book.matches("Отцы и дети"));
     }
 
     @Test
-    void shouldMatchesWrongAuthor () {
+    void shouldMatchesWrongAuthor() {
         assertFalse(book.matches("А.П.Чехов"));
     }
 
