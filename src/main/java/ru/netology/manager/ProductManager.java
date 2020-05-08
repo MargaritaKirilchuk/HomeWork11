@@ -26,11 +26,11 @@ public class ProductManager {
         return result;
     }
 
-    public void removeById (int id){
+    public void removeById(int id){
         repository.removeById(id);
     }
 
-    public Product[] searchBy (String text){
+    public Product[] searchBy(String text){
         Product[] result = new Product[0];
         for (Product product : repository.findAll()) {
             if (product.matches(text)) {
